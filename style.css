@@ -1,0 +1,93 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+body {
+  background: #1b8098;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 3px;
+}
+
+header h1 {
+  text-align: center;
+  font-family: poppins thin;
+  margin-bottom: .7em;
+}
+
+form :where(input, select,button){
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+form input{
+  padding: 0 .8em;
+  font-size: 1.1rem;
+  border: 1px solid #999;
+  height: 50px;
+}
+
+.drop-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.drop-list .select-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 45px;
+  border: 1px solid #999;
+}
+
+.select-box select{
+  width: auto;
+}
+
+.arrow {
+  margin-top: 1.5em;
+  width: 15px;
+}
+
+.select-box img{
+  max-width:20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1b8098;
+  color: #fff;
+  height: 50px;
+  margin-top: 1.3em;
+  font-size: 1.1rem;
+}
+
+select::-webkit-scrollbar{
+  width: 3px;
+}
+
+select::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+
+select::-webkit-scrollbar-thumb{
+  border-radius: 3px;
+  border-right: 2px solid #999;
+}
